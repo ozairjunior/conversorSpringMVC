@@ -15,11 +15,8 @@
 			
 		<p>Dolar: <form:input required="required" type="number" placeholder="dolar" onekeypress="return event.charCode >= 48 " min="1" path="dolar" step=".01"/></p>
 			
-		<p>Real: <form:input required="required" type="number" placeholder="real" onekeypress="return event.charCode >= 48 " min="1" path="real" step=".01"/></p>
-			
 		<p><form:button>Converter</form:button> </p>
 		<p>${ContaDolar}</p>
-		<p>${ContaReal}</p>
 	</form:form>
 	<button> <a href="/intro-spring" > voltar </a> </button>
 
