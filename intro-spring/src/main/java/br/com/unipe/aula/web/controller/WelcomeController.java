@@ -23,9 +23,9 @@ public class WelcomeController {
 	public ModelAndView exibelocal(@ModelAttribute Moedas moedas) {
 		ModelAndView view = new ModelAndView("formulario");
 		
-		view.addObject("dolar","O valor da cotação do Dolar é: "+ moedas.getDolar_cota());
+		view.addObject("dolar","1 real equivale a: $"+ moedas.getDolar_cota());
 		
-		view.addObject("real","O valor da cotação do Real é: "+ moedas.getReal_cota());
+		view.addObject("real","1 dolar equivale a: R$"+ moedas.getReal_cota());
 		
 		view.addObject("ContaDolar","O valor em Dolares é: " + moedas.resultadoDolar());
 		view.addObject("ContaReal","O valor em Reais é: " + moedas.resultadoReal());

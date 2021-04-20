@@ -1,10 +1,12 @@
 package br.com.unipe.aula.model;
 
+import java.text.DecimalFormat;
+
 public class Moedas {
 	
-	private double dolar_cota =  0.18;
+	private double dolar_cota = 0.1793722;
 	private double dolar;
-	private double real_cota = 5.62;
+	private double real_cota = 5.5744 ;
 	private double real;
 	
 	public Moedas() {}
@@ -50,11 +52,12 @@ public class Moedas {
 	}
 
 	public double resultadoDolar() {
-		
-		return dolar * real_cota;
+		DecimalFormat df = new DecimalFormat("#.000");
+		return Double.parseDouble(df.format(dolar * real_cota).replace(",","."));
 	}
 	
 	public double resultadoReal() {
-		return real*dolar_cota;
+		DecimalFormat df = new DecimalFormat("#.000");
+		return Double.parseDouble(df.format(real * dolar_cota).replace(",","."));
 	}
 }
