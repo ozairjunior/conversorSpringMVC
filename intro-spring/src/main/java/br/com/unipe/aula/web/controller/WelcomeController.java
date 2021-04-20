@@ -27,8 +27,8 @@ public class WelcomeController {
 		
 		view.addObject("real","1 dolar equivale a: R$"+ moedas.getReal_cota());
 		
-		view.addObject("ContaDolar","O valor em Dolares é: " + moedas.resultadoDolar());
-		view.addObject("ContaReal","O valor em Reais é: " + moedas.resultadoReal());
+		view.addObject("ContaDolar","O valor em Reais é: " + moedas.resultadoDolar());
+		view.addObject("ContaReal","O valor em Dolares é: " + moedas.resultadoReal());
 		
 		return view;
 		
